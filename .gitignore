@@ -1,0 +1,7 @@
+.venv
+uv.lock
+__pycache__
+
+workspace/datasets/evaluation.parquet
+workspace/results/**/predictions.jsonl
+workspace/reports/

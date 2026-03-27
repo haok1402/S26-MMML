@@ -1,0 +1,22 @@
+[project]
+name = "mmml"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "pyarrow",
+    "torch==2.10.0",
+    "torchvision",
+    "vllm==0.18.0",
+]
+
+[[tool.uv.index]]
+name = "torch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "torch-cu130" }
+torchvision = { index = "torch-cu130" }
+
+[tool.ruff]
+line-length = 256
